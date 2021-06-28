@@ -2,10 +2,12 @@
 gasからzoom APIを呼び出すサンプル
 
 ※以下はJWTを使用してAPIアクセスする方法
+
 （他のアクセス方法としてはOAuthがある)
 
 ①zoom MarketPlaceからJWTアプリ作成
-  https://marketplace.zoom.us/
+
+https://marketplace.zoom.us/
 
     「Develop」→「Build App」
     「Choose your app type」で「JWT」を選択→「Create」
@@ -16,7 +18,8 @@ gasからzoom APIを呼び出すサンプル
       「JWT Token」
 
 ②ユーザーIDを取得
-   curl -H 'Authorization: Bearer {{JWT Token}}' https://api.zoom.us/v2/users
+
+  curl -H 'Authorization: Bearer {{JWT Token}}' https://api.zoom.us/v2/users
     
   ※Windowsならダブルコート（Macならシングルコートらしい）
   
@@ -50,5 +53,7 @@ gasからzoom APIを呼び出すサンプル
     ]}
 
 ③実装
+  
   コードからスクリプトプロパティに①②で取得した「API KEY」、「API SECRET」、「USER ID」を登録
+  
   （GAS旧エディタを開いてGUIで登録しても良い）
