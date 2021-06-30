@@ -19,11 +19,11 @@ https://marketplace.zoom.us/
 
 ②ユーザーIDを取得
 
-  curl -H 'Authorization: Bearer {{JWT Token}}' https://api.zoom.us/v2/users
+    curl -H 'Authorization: Bearer {{JWT Token}}' https://api.zoom.us/v2/users
     
-  ※Windowsならダブルコート（Macならシングルコートらしい）
+    ※Windowsならダブルコート（Macならシングルコートらしい）
   
-  正常に終了した場合以下のようなレスポンスが返却されるので、「users.id」を取得（これがユーザーID）
+正常に終了した場合以下のようなレスポンスが返却されるので、「users.id」を取得（これがユーザーID）
   
     {
     "page_count":1,
